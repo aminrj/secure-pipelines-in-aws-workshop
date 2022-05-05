@@ -167,7 +167,7 @@ Resources:
       Description: Always return success
       Timeout: 60
       Handler: cfn_validate_lambda.lambda_handler
-      Runtime: python2.7
+      Runtime: python3.9
   TestStackValidationLambda:
     Type: 'AWS::Lambda::Function'
     DependsOn:
@@ -183,7 +183,7 @@ Resources:
       Description: Always return success
       Timeout: 60
       Handler: stack_validate_lambda.lambda_handler
-      Runtime: python2.7
+      Runtime: python3.9
   myDynamoDBTable:
     Type: 'AWS::DynamoDB::Table'
     Properties:
